@@ -18,7 +18,6 @@ const PUBLICURL = process.env.NEXT_PUBLIC_VERCEL_URL
 const endpoint =
   process.env.NODE_ENV === "production" ? `` : "http://localhost:3000";
 
-
 function Formwrapper({ pageData, updatedPageData }) {
   const router = useRouter();
 
@@ -120,6 +119,7 @@ function Formwrapper({ pageData, updatedPageData }) {
             onClick={() => {
               setactiveForm("passwordchangeform");
             }}
+            disabled={true}
           >
             Change Password
           </button>
