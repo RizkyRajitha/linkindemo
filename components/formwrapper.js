@@ -11,9 +11,7 @@ import PasswordChangeForm from "./passwordchangeform";
 
 import { ToastContainer, toast } from "react-toastify";
 
-const PUBLICURL = process.env.NEXT_PUBLIC_VERCEL_URL
-  ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-  : "http://localhost:3000";
+const PUBLICURL = 'https://linkindemo.vercel.app/'
 
 const endpoint =
   process.env.NODE_ENV === "production" ? `` : "http://localhost:3000";
