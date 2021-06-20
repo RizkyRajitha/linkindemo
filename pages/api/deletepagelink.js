@@ -1,5 +1,5 @@
 import { jwtAuth, use } from "../../middleware/middleware";
-import { deleteLink, getLinkData } from "../../lib/dbfunc";
+import { deleteLink } from "../../lib/dbfunc";
 
 const changePasswordEnabled =
   process.env.changePasswordEnabled === "false" ? false : true;
@@ -21,10 +21,9 @@ async function handler(req, res) {
     await use(req, res, jwtAuth);
     // console.log(req.body);
     await deleteLink(req.body);
-    // let updatedLinkData = await getLinkData();
-    // console.log(updatedPageData);
-    // throw new Error("wedethee");
+
     res.json({ success: true });
+
   } catch (error) {
     console.log(error.message);
 
