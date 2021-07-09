@@ -1,5 +1,5 @@
 import { jwtAuth, use } from "../../middleware/middleware";
-import { updatePageData, getPageData } from "../../lib/dbfunc";
+import { updatePageData, getPageData } from "../../lib/dbfuncprisma";
 
 const changePasswordEnabled =
   process.env.changePasswordEnabled === "false" ? false : true;
