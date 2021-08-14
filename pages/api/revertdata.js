@@ -1,3 +1,4 @@
+import bcrypt from "bcrypt";
 import { revertData } from "../../lib/dbfuncprisma";
 
 const authlinkindemo = process.env.AUTHLINKINDEMO;

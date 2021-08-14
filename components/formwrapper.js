@@ -12,7 +12,7 @@ import PasswordChangeForm from "./passwordchangeform";
 
 import { ToastContainer, toast } from "react-toastify";
 
-const PUBLICURL = 'https://linkindemo.vercel.app/'
+const PUBLICURL = "https://linkindemo.vercel.app/";
 
 const version = process.env.NEXT_PUBLIC_VERSION || "";
 
@@ -218,6 +218,12 @@ function Formwrapper({ pageData, updatedPageData }) {
                 TODO
               </button> */}
             </div>
+          </div>
+          <div className="d-flex justify-content-around align-items-center flex-grow-1 ms-2 mt-2 ">
+            <span className="text-uppercase text-danger">
+              {" "}
+              this is a demo version, data will not persist.
+            </span>
           </div>
           {activeForm === "genaralForm" && (
             <GenaralForm
