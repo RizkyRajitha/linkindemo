@@ -9,12 +9,12 @@ async function handler(req, res) {
     res.status(400).send("method not allowed");
     return;
   }
-  if (!changePasswordEnabled) {
-    res
-      .status(401)
-      .json({ success: false, message: "Cannot change data in Demo mode" });
-    return;
-  }
+  // if (!changePasswordEnabled) {
+  //   res
+  //     .status(401)
+  //     .json({ success: false, message: "Cannot change data in Demo mode" });
+  //   return;
+  // }
   try {
     // Run the middleware
     await use(req, res, jwtAuth);
