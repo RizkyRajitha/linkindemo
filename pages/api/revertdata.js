@@ -10,8 +10,6 @@ async function handler(req, res) {
   }
 
   try {
-    console.log(req.headers);
-
     if (!req.headers.authlinkindemo) {
       res.status(401).json({ success: false, message: "invalid_credential" });
       return;

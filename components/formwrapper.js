@@ -222,7 +222,8 @@ function Formwrapper({ pageData, updatedPageData }) {
           <div className="d-flex justify-content-around align-items-center flex-grow-1 ms-2 mt-2 ">
             <span className="text-uppercase text-danger">
               {" "}
-              this is a demo version, data will not persist.
+              this is a demo version, data will not persist and reset
+              periodically.
             </span>
           </div>
           {activeForm === "genaralForm" && (
