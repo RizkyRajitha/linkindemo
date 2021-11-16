@@ -248,7 +248,7 @@ function Formwrapper({ pageData, updatedPageData }) {
               periodically.
             </span>
           </div>
-          {activeForm === "genaralForm" && (
+          {activeForm === "generalForm" && (
             <GenaralForm
               data={pageData}
               update={savePageData}
