@@ -249,7 +249,7 @@ function Formwrapper({ pageData, updatedPageData }) {
             </span>
           </div>
           {activeForm === "generalForm" && (
-            <GenaralForm
+            <GeneralForm
               data={pageData}
               update={savePageData}
               loading={loading}
