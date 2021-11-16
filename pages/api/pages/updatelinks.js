@@ -1,8 +1,5 @@
-import { jwtAuth, use } from "../../middleware/middleware";
-import { getLinkData, updateLink } from "../../lib/dbfuncprisma";
-
-const changePasswordEnabled =
-  process.env.changePasswordEnabled === "false" ? false : true;
+import { jwtAuth, use } from "../../../middleware/middleware";
+import { getLinkData, updateLink } from "../../../lib/dbfuncprisma";
 
 async function handler(req, res) {
   if (req.method !== "POST") {
@@ -32,8 +29,9 @@ async function handler(req, res) {
     res.json({ success: true, updatedLinkData: updatedLinkData.linkData });
   } catch (error) {
     console.log(error.message);
+    res.status(500).json({ success: false, message: error.message });
 
-    res.status(500).send(error.message);
+    // res.status(500).send(error.message);
   }
 }
 
