@@ -7,10 +7,10 @@ async function handler(req, res) {
     return;
   }
   // if (!changePasswordEnabled) {
-  res
-    .status(401)
-    .json({ success: false, message: "Cannot change data in Demo mode" });
-  return;
+  // res
+  //   .status(401)
+  //   .json({ success: false, message: "Cannot change data in Demo mode" });
+  // return;
   // }
 
   try {

@@ -3,8 +3,8 @@ import bcrypt from "bcrypt";
 import { jwtAuth, use } from "../../../middleware/middleware";
 import { changePassword, getUser } from "../../../lib/dbfuncprisma";
 
-const changePasswordEnabled =
-  process.env.changePasswordEnabled === "false" ? false : true;
+// const changePasswordEnabled =
+//   process.env.changePasswordEnabled === "false" ? false : true;
 const saltRounds = 10;
 
 async function handler(req, res) {
@@ -13,12 +13,12 @@ async function handler(req, res) {
     return;
   }
 
-  if (!changePasswordEnabled) {
+  // if (!changePasswordEnabled) {
     res
       .status(401)
       .json({ success: false, message: "Cannot change data in Demo mode" });
     return;
-  }
+  // }
 
   try {
     // Run the middleware

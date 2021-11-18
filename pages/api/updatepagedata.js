@@ -1,8 +1,8 @@
 import { jwtAuth, use } from "../../middleware/middleware";
 import { updatePageData, getPageData } from "../../lib/dbfuncprisma";
 
-const changePasswordEnabled =
-  process.env.changePasswordEnabled === "false" ? false : true;
+// const changePasswordEnabled =
+//   process.env.changePasswordEnabled === "false" ? false : true;
 
 async function handler(req, res) {
   if (req.method !== "POST") {
