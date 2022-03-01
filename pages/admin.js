@@ -27,7 +27,7 @@ const Admin = ({}) => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm({ defaultValues: { username: "admin", password: "linkin123" } });
 
   const login = async (data) => {
     setloading(true);
