@@ -50,7 +50,7 @@ export default function Home({
   return (
     <div>
       <div className="outterwrap">
-      <div className="banner text-center mb-2 bg-danger">#GoHomeGota</div>
+      <div className="banner text-center bg-danger">#GoHomeGota</div>
         <div className="wrap">
           <div className="profile">
             {!isEmpty(avatarUrl) && <img src={avatarUrl} className="photo" />}
@@ -287,7 +287,8 @@ export default function Home({
         .banner {
           color: #fff;
           font-size: 20px;
-          //height:2vh
+          height:3vh;
+          margin-bottom:1vh;
         }
 
         @media (max-width: 768px) {
