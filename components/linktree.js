@@ -50,7 +50,6 @@ export default function Home({
   return (
     <div>
       <div className="outterwrap">
-      <div className="banner text-center bg-danger">#GoHomeGota</div>
         <div className="wrap">
           <div className="profile">
             {!isEmpty(avatarUrl) && <img src={avatarUrl} className="photo" />}
@@ -141,7 +140,7 @@ export default function Home({
         .outterwrap {
           margin: 0;
           // padding: 15px;
-          //padding-top:2vh ;
+          padding-top:2vh ;
           height: 100%;
           min-height: "100vh";
           // min-height: ${footerEnabled ? "96vh" : "100vh"};
@@ -155,7 +154,7 @@ export default function Home({
         }
 
         .wrap {
-          min-height: ${footerEnabled ? "92vh" : "96vh"};
+          min-height: ${footerEnabled ? "94vh" : "100vh"};
           height: 100%;
           width: 100%;
           max-width: ${linktreeWidth};
@@ -281,14 +280,6 @@ export default function Home({
 
         .single_icon {
           font-size: 2rem;
-        }
-
-                
-        .banner {
-          color: #fff;
-          font-size: 20px;
-          height:3vh;
-          margin-bottom:1vh;
         }
 
         @media (max-width: 768px) {
